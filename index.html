@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' aria-hidden='true'%3E%3Cpolygon points='20,2 36,11 36,29 20,38 4,29 4,11' fill='%23f26a1b'/%3E%3Cpath d='M12 28 L20 11 L28 28 M15.5 22 H24.5' fill='none' stroke='%230f2347' stroke-width='3.6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Arham.com – Hardware & Industrial Chemicals</title>
+<meta name="description" content="Arham.com: hardware, tools and industrial chemicals for B2B and B2C buyers in Bangladesh.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--navy:#0f2347;--navy2:#1a3566;--ink:#1f2933;--bg:#f5f7fa;--card:#fff;--line:#dde3ec;--org:#f26a1b;--mut:#5b6677;--ok:#1b7f4b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1220;--card:#131c2e;--ink:#e8edf5;--line:#26324a;--mut:#9aa6ba}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;margin:0;line-height:1.1}
+header{background:var(--navy);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar{display:flex;gap:12px;align-items:center;padding:10px 16px;max-width:1200px;margin:auto;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font:700 28px 'Barlow Condensed';letter-spacing:.5px}.logo b{color:var(--org)}
+.search{flex:1;min-width:180px;position:relative}
+.search input{width:100%;padding:10px 14px;border-radius:6px;border:0;font:inherit}
+#sug{position:absolute;left:0;right:0;top:100%;background:var(--card);color:var(--ink);border-radius:6px;box-shadow:0 8px 24px #0004;display:none;overflow:hidden}
+#sug div{padding:9px 14px;cursor:pointer;border-bottom:1px solid var(--line)}#sug div:hover{background:var(--bg)}
+button{font:inherit;cursor:pointer;border:0;border-radius:6px;padding:9px 16px;font-weight:600}
+.pri{background:var(--org);color:#fff}.sec{background:var(--navy);color:#fff}.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--org);outline-offset:2px}
+.hero{background:linear-gradient(110deg,var(--navy) 55%,var(--navy2));color:#fff;padding:56px 16px}
+.wrap{max-width:1200px;margin:auto;padding:0 16px}.hero .wrap{padding:0}
+.hero h1{font-size:clamp(38px,7vw,68px);max-width:14ch}.hero p{max-width:46ch;color:#cdd6e6}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+section{padding:36px 0}h2{font-size:32px;margin-bottom:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{background:var(--card);border:1px solid var(--line);color:var(--ink)}.tabs .on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ph{height:110px;border-radius:6px;display:grid;place-items:center;font:700 34px 'Barlow Condensed';color:#fff}
+.hw{background:linear-gradient(135deg,#3b4a63,#1a3566)}.ch{background:linear-gradient(135deg,#f26a1b,#b8430a)}
+.old{text-decoration:line-through;color:var(--mut);font-size:14px}.price{font-weight:700;font-size:19px}
+.tag{font-size:12px;color:var(--mut)}.stk{font-size:13px;color:var(--ok)}.warn{font-size:12px;background:#fff3e6;color:#8a3d05;padding:6px 8px;border-radius:4px}
+.row{display:flex;gap:8px;margin-top:auto}.row button{flex:1;padding:8px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.why div{border-left:4px solid var(--org);padding:4px 14px;background:var(--card)}
+dialog{border:1px solid var(--line);border-radius:10px;padding:20px;width:min(460px,94vw);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:#0008}
+label{display:block;font-size:14px;margin:10px 0 3px}input,select,textarea{width:100%;padding:9px;border:1px solid var(--line);border-radius:6px;font:inherit;background:var(--bg);color:var(--ink)}
+.line{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);align-items:center}
+.line input{width:60px}
+footer{background:var(--navy);color:#cdd6e6;padding:32px 0;margin-top:20px}footer b{color:#fff}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:12px 18px;text-decoration:none;font-weight:600;box-shadow:0 4px 14px #0005}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:80px;background:var(--navy);color:#fff;padding:10px 18px;border-radius:6px;display:none;z-index:9}
+@media(prefers-reduced-motion:no-preference){.card{transition:transform .15s}.card:hover{transform:translateY(-3px)}}
+</style></head><body>
+<header><div class="bar">
+<a class="logo" href="#" aria-label="Arham.com home"><svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#f26a1b"/><path d="M12 28 L20 11 L28 28 M15.5 22 H24.5" fill="none" stroke="#0f2347" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/></svg><span>ARHAM<b>.com</b></span></a>
+<div class="search"><input id="q" type="search" placeholder="Search products, SKU or brand…" aria-label="Search products" autocomplete="off"><div id="sug"></div></div>
+<button class="ghost" style="color:#fff;border-color:#fff4" onclick="openRFQ()">Request a quote</button>
+<button class="pri" onclick="openCart()">Cart (<span id="cc">0</span>)</button>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Tools, hardware and chemicals, supplied in bulk.</h1>
+<p>Retail and wholesale supply for contractors, factories and workshops. Order online, pay on delivery, or ask for a bulk quote.</p>
+<div class="pills"><button class="pri" onclick="go('shop')">Shop products</button><button class="ghost" style="color:#fff;border-color:#fff6" onclick="openRFQ()">Get bulk pricing</button></div>
+</div></div>
+
+<main class="wrap">
+<section id="shop"><h2>Products</h2>
+<div class="tabs" id="tabs"></div>
+<div class="tabs"><select id="sort" style="width:auto" aria-label="Sort"><option value="">Sort: Featured</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option></select>
+<label style="margin:0;display:flex;gap:6px;align-items:center"><input type="checkbox" id="offer" style="width:auto"> Offers only</label></div>
+<div class="grid" id="grid"></div></section>
+
+<section><h2>Why Arham.com</h2><div class="why">
+<div><h3>Bulk and wholesale</h3>Tiered pricing and quotes for business buyers.</div>
+<div><h3>Chemical documents</h3>SDS and TDS from the supplier, shown per product.</div>
+<div><h3>Pay your way</h3>Cash on Delivery now; bKash, Nagad and card ready to connect.</div>
+<div><h3>WhatsApp ordering</h3>Send your cart straight to our team.</div></div></section>
+</main>
+
+<footer><div class="wrap"><b>Arham.com</b><br>Phone: add your number · Email: add your business email · Address: add your location<br>Privacy · Terms · Shipping &amp; Returns</div></footer>
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+<div id="toast" role="status"></div>
+
+<dialog id="dCart"><h2>Your cart</h2><div id="cartBody"></div>
+<form id="fCo" onsubmit="return placeOrder(event)">
+<label>Full name<input name="n" required minlength="3"></label>
+<label>Phone<input name="p" required pattern="01[0-9]{9}" placeholder="01XXXXXXXXX" title="11-digit Bangladesh mobile number"></label>
+<label>Delivery address<textarea name="a" required minlength="8" rows="2"></textarea></label>
+<label>Coupon<input id="cp" placeholder="Try ARHAM10"></label>
+<label>Payment<select name="m"><option>Cash on Delivery</option><option disabled>bKash (coming soon)</option><option disabled>Nagad (coming soon)</option><option disabled>Card (coming soon)</option></select></label>
+<div class="line"><b>Total</b><b id="tot">৳0</b></div>
+<div class="row"><button class="pri" type="submit">Place order</button><button class="sec" type="button" onclick="waOrder()">Order on WhatsApp</button><button class="ghost" type="button" onclick="dCart.close()">Close</button></div></form></dialog>
+
+<dialog id="dRfq"><h2>Request a quote</h2>
+<form onsubmit="return sendRFQ(event)">
+<label>Company name<input name="c" required></label><label>VAT / BIN<input name="b"></label>
+<label>Product and quantity<textarea name="d" required rows="3" placeholder="e.g. 20 drums of sealant, 200 L each"></textarea></label>
+<label>Phone or email<input name="x" required></label>
+<div class="row"><button class="pri">Send request</button><button type="button" class="ghost" onclick="dRfq.close()">Cancel</button></div></form></dialog>
+
+<dialog id="dItem"><div id="itemBody"></div></dialog>
+
+<script>
+const P=[
+["HT-101","Cordless Drill 18V","Hardware","Power Tools","Bosch",8500,7490,"Piece",1,40],
+["HT-102","Angle Grinder 850W","Hardware","Power Tools","Makita",6200,0,"Piece",1,25],
+["HT-210","Claw Hammer 16oz","Hardware","Hand Tools","Stanley",650,550,"Piece",1,120],
+["EL-310","Copper Wire 1.5mm (90m)","Hardware","Electrical","Walton",3400,0,"Box",1,60],
+["PL-420","PVC Pipe 1in (10ft)","Hardware","Plumbing","RFL",420,380,"Piece",10,300],
+["SF-510","Safety Helmet","Hardware","Safety","3M",450,0,"Piece",5,90],
+["FS-610","Hex Bolt M10 (100 pcs)","Hardware","Fasteners","Generic",900,780,"Box",1,200],
+["CH-701","Industrial Degreaser 20L","Chemicals","Cleaning","Supplier-listed",4800,4300,"Drum",1,35],
+["CH-702","Epoxy Adhesive 1kg","Chemicals","Adhesives","Supplier-listed",1250,0,"Kg",2,80],
+["CH-703","Water Treatment Biocide 25L","Chemicals","Water Treatment","Supplier-listed",7600,0,"Drum",1,12],
+["CH-704","Industrial Lubricant 18L","Chemicals","Lubricants","Supplier-listed",5400,4950,"Drum",1,28],
+["CH-705","Construction Sealant 600ml","Chemicals","Construction","Supplier-listed",520,0,"Piece",12,150]
+].map(a=>({sku:a[0],name:a[1],type:a[2],cat:a[3],brand:a[4],price:a[5],sale:a[6],unit:a[7],moq:a[8],stock:a[9]}));
+const $=s=>document.querySelector(s);let cart=[],type="All",query="";
+try{cart=JSON.parse(localStorage.getItem("arhamCart")||"[]")}catch(e){}
+const eff=p=>p.sale||p.price,tk=n=>"৳"+n.toLocaleString("en-IN");
+function save(){try{localStorage.setItem("arhamCart",JSON.stringify(cart))}catch(e){}$("#cc").textContent=cart.reduce((s,i)=>s+i.q,0);}
+function toast(t){const e=$("#toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",2200)}
+function go(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+function tabs(){const t=["All","Hardware","Chemicals"];$("#tabs").innerHTML=t.map(x=>`<button class="${x==type?'on':''}" onclick="type='${x}';render()">${x}</button>`).join("")}
+function render(){tabs();let l=P.filter(p=>(type=="All"||p.type==type)&&(!$("#offer").checked||p.sale)&&(p.name+p.sku+p.brand+p.cat).toLowerCase().includes(query.toLowerCase()));
+const s=$("#sort").value;if(s)l.sort((a,b)=>s=="asc"?eff(a)-eff(b):eff(b)-eff(a));
+$("#grid").innerHTML=l.length?l.map(p=>`<div class="card"><div class="ph ${p.type=="Hardware"?'hw':'ch'}">${p.sku.slice(0,2)}</div><div class="tag">${p.cat} · ${p.brand}</div><strong>${p.name}</strong>
+<div><span class="price">${tk(eff(p))}</span> ${p.sale?`<span class="old">${tk(p.price)}</span>`:""} <span class="tag">/ ${p.unit}</span></div>
+<div class="stk">${p.stock} in stock · MOQ ${p.moq}</div>
+${p.type=="Chemicals"?`<div class="warn">SDS/TDS on request. Handling restrictions may apply.</div>`:""}
+<div class="row"><button class="pri" onclick="add('${p.sku}')">Add to cart</button><button class="ghost" onclick="info('${p.sku}')">Details</button></div></div>`).join(""):"<p>No products match. Clear the search or filters.</p>"}
+function add(sku,q){const p=P.find(x=>x.sku==sku),i=cart.find(c=>c.sku==sku);q=q||p.moq;if(i)i.q+=q;else cart.push({sku,q});save();toast("Added: "+p.name)}
+function info(sku){const p=P.find(x=>x.sku==sku);$("#itemBody").innerHTML=`<h2>${p.name}</h2><p class="tag">SKU ${p.sku} · ${p.brand} · ${p.cat}</p><p>Price ${tk(eff(p))} per ${p.unit}. Minimum order ${p.moq}. ${p.stock} available.</p>${p.type=="Chemicals"?`<p class="warn">Safety documents (SDS/TDS) must be uploaded by the admin from the manufacturer. None are shown until then.</p>`:`<p>Demo product. Replace this description with your supplier's specifications.</p>`}<div class="row"><button class="pri" onclick="add('${p.sku}');$('#dItem').close()">Add to cart</button><button class="sec" onclick="$('#dItem').close();openRFQ()">Request a quote</button><button class="ghost" onclick="$('#dItem').close()">Close</button></div>`;$("#dItem").showModal()}
+const dCart=$("#dCart"),dRfq=$("#dRfq");
+function total(){let t=cart.reduce((s,i)=>s+eff(P.find(p=>p.sku==i.sku))*i.q,0);if($("#cp").value.trim().toUpperCase()=="ARHAM10")t=Math.round(t*.9);return t}
+function drawCart(){$("#cartBody").innerHTML=cart.length?cart.map((i,n)=>{const p=P.find(x=>x.sku==i.sku);return `<div class="line"><span>${p.name}<br><small class="tag">${tk(eff(p))} / ${p.unit}</small></span><input type="number" min="${p.moq}" max="${p.stock}" value="${i.q}" aria-label="Quantity" onchange="qty(${n},this.value)"><button class="ghost" onclick="cart.splice(${n},1);save();drawCart()">Remove</button></div>`}).join(""):"<p>Your cart is empty.</p>";$("#tot").textContent=tk(total())}
+function qty(n,v){const p=P.find(x=>x.sku==cart[n].sku);cart[n].q=Math.min(p.stock,Math.max(p.moq,parseInt(v)||p.moq));save();drawCart()}
+function openCart(){drawCart();dCart.showModal()}$("#cp").addEventListener("input",()=>$("#tot").textContent=tk(total()));
+function placeOrder(e){e.preventDefault();if(!cart.length){toast("Cart is empty");return false}
+const id="ARH-"+Date.now().toString().slice(-6);toast("Order "+id+" placed. We will call to confirm.");cart=[];save();dCart.close();e.target.reset();return false}
+function waOrder(){const l=cart.map(i=>{const p=P.find(x=>x.sku==i.sku);return `${i.q} x ${p.name} (${p.sku})`}).join("%0A");window.open("https://wa.me/8801XXXXXXXXX?text=Arham.com order:%0A"+l+"%0ATotal: "+total(),"_blank")}
+function openRFQ(){dRfq.showModal()}function sendRFQ(e){e.preventDefault();dRfq.close();e.target.reset();toast("Quote request sent. We will reply within 1 business day.");return false}
+const sug=$("#sug");$("#q").addEventListener("input",e=>{query=e.target.value;render();const m=query?P.filter(p=>(p.name+p.sku).toLowerCase().includes(query.toLowerCase())).slice(0,5):[];sug.style.display=m.length?"block":"none";sug.innerHTML=m.map(p=>`<div onclick="info('${p.sku}');sug.style.display='none'">${p.name} <small>${p.sku}</small></div>`).join("")});
+$("#sort").onchange=render;$("#offer").onchange=render;$("#wa").href="https://wa.me/8801XXXXXXXXX";
+save();render();
+</script></body></html>
